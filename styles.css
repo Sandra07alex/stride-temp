@@ -196,7 +196,26 @@ nav ul li a:hover::after {
     background: transparent;
     color: var(--white);
 }
+/* Add this to your styles.css file */
 
+/* Default button styles */
+.hero .btn {
+    margin-right: 10px; /* Adjust the value as needed */
+}
+
+.hero .btn.secondary-btn {
+    margin-left: 10px; /* Adjust the value as needed */
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+    .hero .btn,
+    .hero .btn.secondary-btn {
+        display: block;
+        width: 100%;
+        margin: 10px 0; /* Adjust the value as needed */
+    }
+}
 /* About Section */
 .about {
     padding: 100px 0;
@@ -211,16 +230,7 @@ nav ul li a:hover::after {
     position: relative;
 }
 
-/* .about h2::after, .focus-areas h2::after, .goals h2::after, .impact h2::after, .contact h2::after {
-    content: '';
-    position: absolute;
-    bottom: -15px;
-    left: 50%;
-    transform: translateX(-50%);
-    width: 80px;
-    height: 3px;
-    background: linear-gradient(to right, var(--primary-purple), var(--primary-blue));
-} */
+
 
 .about-content {
     display: flex;
@@ -277,145 +287,7 @@ nav ul li a:hover::after {
     margin-bottom: 15px;
 }
 
-/* Vision Section */
-/* .vision {
-    padding: 100px 0;
-    background: linear-gradient(135deg, rgba(196, 78, 209, 0.05) 0%, rgba(126, 206, 244, 0.05) 100%);
-}
 
-.vision-content {
-    padding-top: 50px;
-    align-items: center;
-}
-
-.vision-image {
-    flex: 1;
-    border-radius: 10px;
-    overflow: hidden;
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
-    opacity: 0;
-    transition: opacity 0.8s ease, transform 0.8s ease;
-}
-
-.vision-image.animate {
-    opacity: 1;
-    animation: slideInLeft 0.8s ease forwards;
-}
-
-.vision-text {
-    flex: 1;
-}
-
-.vision-text h3 {
-    font-size: 28px;
-    margin-bottom: 20px;
-    color: var(--primary-purple);
-}
-
-.vision-text ul {
-    margin-bottom: 30px;
-}
-
-.vision-text ul li {
-    margin-bottom: 15px;
-    position: relative;
-    padding-left: 30px;
-}
-
-.vision-text ul li::before {
-    content: '';
-    position: absolute;
-    left: 0;
-    top: 8px;
-    width: 15px;
-    height: 15px;
-    background: linear-gradient(135deg, var(--primary-purple) 0%, var(--primary-blue) 100%);
-    border-radius: 50%;
-}*/
-/* Vision Section Styling 
-.vision {
-    background-color: var(--light-gray);
-    padding: 80px 0;
-    position: relative;
-  }
-  
-  .vision::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-
-    opacity: 0.7;
-    z-index: 0;
-  }
-  
-  .vision .container {
-    position: relative;
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 0 20px;
-    z-index: 1;
-  }
-  
-  
-
-  
-  .vision-content {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 30px;
-    justify-content: center;
-  }
-  
-  .vision-text {
-    flex-basis: calc(50% - 30px);
-    background-color: var(--white);
-    border-radius: 12px;
-    padding: 30px;
-    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.05);
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-  }
-  
-  .vision-text:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
-  }
-  
-  .vision-text h3 {
-    color: var(--dark-purple);
-    font-size: 1.5rem;
-    margin-bottom: 20px;
-    padding-bottom: 10px;
-    border-bottom: 2px solid var(--light-blue);
-    font-weight: 600;
-    font-family: var(--font-primary);
-  }
-  
-  .vision-text ul {
-    padding-left: 20px;
-    margin: 0;
-  }
-  
-  .vision-text li {
-    margin-bottom: 15px;
-    color: var(--dark-gray);
-    font-size: 1.1rem;
-    position: relative;
-    padding-left: 15px;
-    line-height: 1.5;
-    font-family: var(--font-primary);
-  }
-  
-  .vision-text li::before {
-    content: "•";
-    color: var(--primary-purple);
-    font-weight: bold;
-    position: absolute;
-    left: -5px;
-    font-size: 1.2rem;
-  }*/
   /* STRIDE Vision & Goals Section Styling */
 .vision {
     padding: 70px 0;
